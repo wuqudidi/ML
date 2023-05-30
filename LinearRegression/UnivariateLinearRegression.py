@@ -24,7 +24,7 @@ output_param_name = 'Happiness.Score'
 #ndarray是numpy模块的基本数据模块，它是由一组数字组成一维或者多维的阵列。
 x_train = train_data[[input_param_name]].values
 y_train = train_data[[output_param_name]].values
-
+y_train2 = train_data[[output_param_name]].values
 
 x_test = test_data[input_param_name].values
 y_test = test_data[output_param_name].values
