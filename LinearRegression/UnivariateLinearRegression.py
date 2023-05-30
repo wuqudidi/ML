@@ -15,7 +15,7 @@ train_data = data.sample( frac = 0.8 )
 #在划分数据集的时候，生成了训练集，把被分到训练集的样本剔除掉，剩下的就是测试集了。
 test_data = data.drop(train_data.index)
 
-#标注要取出的列的名字，此处的input列即样本值，output列即标签值1
+#标注要取出的列的名字，此处的input列即样本值，output列即标签值
 input_param_name = 'Economy..GDP.per.Capita.'
 output_param_name = 'Happiness.Score'
 
