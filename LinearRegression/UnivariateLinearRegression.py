@@ -19,10 +19,12 @@ test_data = data.drop(train_data.index)
 input_param_name = 'Economy..GDP.per.Capita.'
 output_param_name = 'Happiness.Score'
 
-print（train_data[input_param_name]）
-#train_data是个csv的数据集，视为矩阵，train_data[]则把其中的多维元素
+#data 和train_data都是使用pandas读取csv文件后创建的DataFrame
+#x_train则是ndarray即n维数组，numpy模块中的，
+#ndarray是numpy模块的基本数据模块，它是由一组数字组成一维或者多维的阵列。
 x_train = train_data[[input_param_name]].values
 y_train = train_data[[output_param_name]].values
+
 
 x_test = test_data[input_param_name].values
 y_test = test_data[output_param_name].values
